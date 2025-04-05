@@ -1,0 +1,36 @@
+:root,
+.light {
+  --rose-pine-base: rgb(250, 244, 237);
+  --rose-pine-surface: rgb(255, 250, 243);
+  --rose-pine-overlay: rgb(242, 233, 222);
+  --rose-pine-muted: rgb(152, 147, 165);
+  --rose-pine-subtle: rgb(121, 117, 147);
+  --rose-pine-text: rgb(87, 82, 121);
+  --rose-pine-love: rgb(180, 99, 122);
+  --rose-pine-gold: rgb(234, 157, 52);
+  --rose-pine-rose: rgb(215, 130, 126);
+  --rose-pine-pine: rgb(40, 105, 131);
+  --rose-pine-foam: rgb(86, 148, 159);
+  --rose-pine-iris: rgb(144, 122, 169);
+  --rose-pine-highlight-low: rgb(244, 237, 232);
+  --rose-pine-highlight-med: rgb(223, 218, 217);
+  --rose-pine-highlight-high: rgb(206, 202, 205);
+}
+
+.dark {
+  --rose-pine-base: rgb(25, 23, 36);
+  --rose-pine-surface: rgb(31, 29, 46);
+  --rose-pine-overlay: rgb(38, 35, 58);
+  --rose-pine-muted: rgb(110, 106, 134);
+  --rose-pine-subtle: rgb(144, 140, 170);
+  --rose-pine-text: rgb(224, 222, 244);
+  --rose-pine-love: rgb(235, 111, 146);
+  --rose-pine-gold: rgb(246, 193, 119);
+  --rose-pine-rose: rgb(235, 188, 186);
+  --rose-pine-pine: rgb(49, 116, 143);
+  --rose-pine-foam: rgb(156, 207, 216);
+  --rose-pine-iris: rgb(196, 167, 231);
+  --rose-pine-highlight-low: rgb(33, 32, 46);
+  --rose-pine-highlight-med: rgb(64, 61, 82);
+  --rose-pine-highlight-high: rgb(82, 79, 103);
+}
