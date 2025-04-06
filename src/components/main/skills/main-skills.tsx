@@ -1,12 +1,7 @@
-type Skills = {
-  group: string
-  items: {
-    name: string
-  }[]
-}
+import { Basics } from 'content-collections'
 
 type MainSkillsProps = {
-  skills: Skills[]
+  skills: Basics['skills']
 }
 
 export const MainSkills = ({ skills }: MainSkillsProps) => {

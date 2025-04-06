@@ -1,20 +1,13 @@
-import {
-  allIntros,
-  allProfiles,
-  allSkills,
-  Intro,
-  Profile,
-  Skill,
-} from 'content-collections'
+import { allBasics, allIntros, Basics, Intro } from 'content-collections'
 
 const DEFAULT_KEY = 'default'
 
-const PROFILES = allProfiles.reduce(
-  (acc, profile) => ({
+const BASICS = allBasics.reduce(
+  (acc, basics) => ({
     ...acc,
-    [profile._meta.path]: profile,
+    [basics._meta.path]: basics,
   }),
-  {} as Record<string, Profile>,
+  {} as Record<string, Basics>,
 )
 
 const INTROS = allIntros.reduce(
@@ -25,22 +18,14 @@ const INTROS = allIntros.reduce(
   {} as Record<string, Intro>,
 )
 
-const SKILLS = allSkills.reduce(
-  (acc, skill) => ({
-    ...acc,
-    [skill._meta.path]: skill,
-  }),
-  {} as Record<string, Skill>,
-)
+const getRecord = <T>(records: Record<string, T>, key: string): T => {
+  return records[key] || records[DEFAULT_KEY]
+}
 
-export const getProfile = (lang: string): Profile => {
-  return PROFILES[lang] || PROFILES[DEFAULT_KEY]
+export const getBasics = (lang: string): Basics => {
+  return getRecord<Basics>(BASICS, lang)
 }
 
 export const getIntro = (lang: string): Intro => {
-  return INTROS[lang] || INTROS[DEFAULT_KEY]
-}
-
-export const getSkills = (lang: string): Skill => {
-  return SKILLS[lang] || SKILLS[DEFAULT_KEY]
+  return getRecord<Intro>(INTROS, lang)
 }

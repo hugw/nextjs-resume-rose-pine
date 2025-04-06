@@ -1,20 +1,21 @@
-import { getIntro } from '@/data/data'
 import { MenuItem } from './sidebar-menu-item'
 
 type SidebarMenuProps = {
-  lang: string
+  items: {
+    name: string
+    slug: string
+  }[]
 }
 
-export const SidebarMenu = ({ lang }: SidebarMenuProps) => {
-  const intro = getIntro(lang)
-
+export const SidebarMenu = ({ items }: SidebarMenuProps) => {
   return (
     <nav className="hidden md:block">
       <ul className="flex flex-col">
-        <MenuItem to={`${intro.slug}`}>{intro.title}</MenuItem>
-        <MenuItem to="skills">Skills</MenuItem>
-        <MenuItem to="experience">Experience</MenuItem>
-        <MenuItem to="faq">About me</MenuItem>
+        {items.map((item) => (
+          <MenuItem key={item.slug} to={item.slug}>
+            {item.name}
+          </MenuItem>
+        ))}
       </ul>
     </nav>
   )

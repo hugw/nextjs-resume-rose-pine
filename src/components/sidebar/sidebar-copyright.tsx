@@ -1,24 +1,26 @@
 import { ExternalLink } from '@/components/shared/external-link'
+import { Basics } from 'content-collections'
 
-export const SidebarCopyright = () => {
+type SidebarCopyrightProps = {
+  labels: Basics['labels']
+}
+
+export const SidebarCopyright = ({ labels }: SidebarCopyrightProps) => {
   return (
     <footer className="hidden md:block">
       <p className="pb-4 text-sm">
-        Copyright {new Date().getFullYear()}.
-        <br />
-        Built with{' '}
+        {`${labels.builtWith} `}
         <ExternalLink href="https://nextjs.org" title="NextJS">
           NextJS
         </ExternalLink>
-        ,{' '}
+        {', '}
         <ExternalLink href="https://tailwindcss.com" title="Tailwindcss">
           Tailwind CSS
         </ExternalLink>
-        , and {/* @TODO Update URL */}
+        {`, ${labels.and} `}
         <ExternalLink href="https://rosepinetheme.com" title="Rosé Pine">
-          Rosé Pine
-        </ExternalLink>{' '}
-        theme.
+          Rosé Pine theme.
+        </ExternalLink>
       </p>
     </footer>
   )

@@ -1,32 +1,60 @@
 import { defineCollection, defineConfig } from '@content-collections/core'
 import { compileMarkdown } from '@content-collections/markdown'
 
-const profile = defineCollection({
-  name: 'profile',
-  directory: 'src/data/profile',
+const basics = defineCollection({
+  name: 'basics',
+  typeName: 'Basics',
+  directory: 'src/data/basics',
   include: '**/*.yaml',
   parser: 'yaml',
-  schema: (z) => ({
-    name: z.string(),
-    role: z.string(),
-    headline: z.string().nullable(),
-    socials: z.array(
-      z.object({
-        id: z.string(),
-        url: z.string().url(),
+  schema: (z) => {
+    const sectionSchema = z.object({
+      name: z.string(),
+      slug: z.string(),
+    })
+
+    return {
+      profile: z.object({
+        name: z.string(),
+        role: z.string(),
+        headline: z.string().nullable(),
+        socials: z.array(
+          z.object({
+            id: z.string(),
+            url: z.string().url(),
+          }),
+        ),
       }),
-    ),
-  }),
+      skills: z.array(
+        z.object({
+          group: z.string(),
+          items: z.array(
+            z.object({
+              name: z.string(),
+            }),
+          ),
+        }),
+      ),
+      sections: z.object({
+        intro: sectionSchema,
+        skills: sectionSchema,
+        experience: sectionSchema,
+        about: sectionSchema,
+      }),
+      labels: z.object({
+        hello: z.string(),
+        builtWith: z.string(),
+        and: z.string(),
+      }),
+    }
+  },
 })
 
 const intro = defineCollection({
   name: 'intro',
   directory: 'src/data/intro',
   include: '**/*.md',
-  schema: (z) => ({
-    title: z.string(),
-    slug: z.string(),
-  }),
+  schema: () => ({}),
   transform: async (document, context) => {
     const html = await compileMarkdown(context, document)
     return {
@@ -36,23 +64,6 @@ const intro = defineCollection({
   },
 })
 
-const skills = defineCollection({
-  name: 'skills',
-  directory: 'src/data/skills',
-  include: '**/*.yaml',
-  parser: 'yaml',
-  schema: (z) => ({
-    title: z.string(),
-    slug: z.string(),
-    skills: z.array(
-      z.object({
-        group: z.string(),
-        items: z.array(z.object({ name: z.string() })),
-      }),
-    ),
-  }),
-})
-
 export default defineConfig({
-  collections: [profile, intro, skills],
+  collections: [basics, intro],
 })

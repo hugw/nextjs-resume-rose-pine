@@ -1,0 +1,51 @@
+profile:
+  name: Elric Tano
+  role: Engenheiro de Software Sênior
+  headline: Especialista em React & Astro. Apaixonado por construir interfaces rápidas, modernas e elegantes.
+  socials:
+    - id: github
+      url: https://github.com/elrictano30
+    - id: linkedin
+      url: https://linkedin.com/in/elrictano30
+    - id: twitter
+      url: https://twitter.com/elrictano30
+
+skills:
+  - group: O que faço
+    items:
+      - name: Desenvolvimento Frontend
+      - name: Desenvolvimento Full Stack
+      - name: Liderança Técnica
+
+  - group: Linguagens & Frameworks
+    items:
+      - name: JavaScript
+      - name: TypeScript
+      - name: React
+      - name: Next.js
+      - name: Node
+      - name: Fastify
+      - name: Express
+      - name: HTML
+      - name: CSS
+      - name: Tailwind CSS
+      - name: Vite
+
+sections:
+  intro:
+    name: Intro
+    slug: intro
+  skills:
+    name: Skills
+    slug: skills
+  experience:
+    name: Experience
+    slug: experience
+  about:
+    name: About me
+    slug: about-me
+
+labels:
+  hello: <b>Opa!</b> Sou
+  builtWith: Construído com
+  and: e
