@@ -41,7 +41,7 @@ sections:
   experience:
     name: Experience
     slug: experience
-  about:
+  faq:
     name: About me
     slug: about-me
 

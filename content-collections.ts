@@ -39,7 +39,7 @@ const basics = defineCollection({
         intro: sectionSchema,
         skills: sectionSchema,
         experience: sectionSchema,
-        about: sectionSchema,
+        faq: sectionSchema,
       }),
       labels: z.object({
         hello: z.string(),
@@ -64,6 +64,23 @@ const intro = defineCollection({
   },
 })
 
+const faq = defineCollection({
+  name: 'faq',
+  directory: 'src/data/faq',
+  include: '**/*.md',
+  schema: (z) => ({
+    question: z.string(),
+    order: z.number(),
+  }),
+  transform: async (document, context) => {
+    const html = await compileMarkdown(context, document)
+    return {
+      ...document,
+      html,
+    }
+  },
+})
+
 export default defineConfig({
-  collections: [basics, intro],
+  collections: [basics, intro, faq],
 })
