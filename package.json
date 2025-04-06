@@ -9,6 +9,9 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@content-collections/core": "^0.8.2",
+    "@content-collections/markdown": "^0.1.4",
+    "@content-collections/next": "^0.2.6",
     "@tailwindcss/typography": "^0.5.16",
     "clsx": "^2.1.1",
     "next": "15.2.4",

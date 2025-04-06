@@ -1,0 +1,12 @@
+---
+name: Elric Tano
+role: Senior Software Engineer
+headline: Expert in React & Astro. Passionate about building fast, modern , and elegant web interfaces.
+socials:
+  - id: github
+    url: https://github.com/elrictano30
+  - id: linkedin
+    url: https://linkedin.com/in/elrictano30
+  - id: twitter
+    url: https://twitter.com/elrictano30
+---
