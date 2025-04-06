@@ -1,8 +1,10 @@
 import {
   allBasics,
+  allExperiences,
   allFaqs,
   allIntros,
   Basics,
+  Experience,
   Faq,
   Intro,
 } from 'content-collections'
@@ -33,6 +35,14 @@ const FAQs = allFaqs.reduce(
   {} as Record<string, Faq>,
 )
 
+const EXPERIENCE = allExperiences.reduce(
+  (acc, experience) => ({
+    ...acc,
+    [experience._meta.path]: experience,
+  }),
+  {} as Record<string, Experience>,
+)
+
 const getRecord = <T>(records: Record<string, T>, key: string): T => {
   return records[key] || records[DEFAULT_KEY]
 }
@@ -51,6 +61,10 @@ const getRecords = <T>(records: Record<string, T>, key: string): T[] => {
 
 export const getBasics = (lang: string): Basics => {
   return getRecord<Basics>(BASICS, lang)
+}
+
+export const getExperience = (lang: string): Experience => {
+  return getRecord<Experience>(EXPERIENCE, lang)
 }
 
 export const getIntro = (lang: string): Intro => {

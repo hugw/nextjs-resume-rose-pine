@@ -81,6 +81,28 @@ const faq = defineCollection({
   },
 })
 
+const experience = defineCollection({
+  name: 'experience',
+  directory: 'src/data/experience',
+  include: '**/*.yaml',
+  parser: 'yaml',
+  schema: (z) => ({
+    experience: z.array(
+      z.object({
+        company: z.string(),
+        date: z.string(),
+        roles: z.array(
+          z.object({
+            title: z.string(),
+            date: z.string(),
+            description: z.array(z.string()),
+          }),
+        ),
+      }),
+    ),
+  }),
+})
+
 export default defineConfig({
-  collections: [basics, intro, faq],
+  collections: [basics, intro, faq, experience],
 })

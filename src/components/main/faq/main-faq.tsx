@@ -21,7 +21,7 @@ export const MainFaq = ({ questions }: MainFaqProps) => {
           key={index}
           className="border-b-theme-border mb-theme-5x pb-theme-5x border-b last:border-b-0"
         >
-          <Collapsible>
+          <Collapsible defaultOpen={index === 0}>
             <CollapsibleTrigger asChild>
               <div className="group flex cursor-pointer">
                 <h3 className="flex-1 font-semibold">{item.question}</h3>
