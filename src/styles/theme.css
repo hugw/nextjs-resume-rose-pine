@@ -8,4 +8,84 @@
   /* Fonts */
   --font-sans: var(--font-inter);
   --font-mono: var(--font-roboto-mono);
+
+  /* Colors */
+  /* https://rosepinetheme.com/palette/ */
+  --color-theme-base: var(--rose-pine-base);
+  --color-theme-surface: var(--rose-pine-surface);
+  --color-theme-overlay: var(--rose-pine-overlay);
+  --color-theme-muted: var(--rose-pine-muted);
+  --color-theme-subtle: var(--rose-pine-subtle);
+  --color-theme-text: var(--rose-pine-text);
+  --color-theme-highlight-low: var(--rose-pine-highlight-low);
+  --color-theme-highlight-med: var(--rose-pine-highlight-med);
+  --color-theme-highlight-high: var(--rose-pine-highlight-high);
+
+  --color-theme-primary: var(--rose-pine-pine);
+  --color-theme-secondary: var(--rose-pine-iris);
+  --color-theme-accent: var(--rose-pine-love);
+
+  --color-theme-border: var(--rose-pine-highlight-med);
+
+  /* Spacing */
+  --spacing-theme-1x: calc(var(--spacing) * 1); /* 4px */
+  --spacing-theme-2x: calc(var(--spacing) * 2); /* 8px */
+  --spacing-theme-3x: calc(var(--spacing) * 3); /* 12px */
+  --spacing-theme-4x: calc(var(--spacing) * 4); /* 16px */
+  --spacing-theme-5x: calc(var(--spacing) * 5); /* 20px */
+  --spacing-theme-10x: calc(var(--spacing) * 10); /* 40px */
+  --spacing-theme-20x: calc(var(--spacing) * 20); /* 80px */
+
+  /* Font size */
+  --text-theme-sm: var(--text-sm); /* 14px */
+  --text-theme-sm--line-height: calc(1.25 / 0.875);
+  --text-theme-md: var(--text-base); /* 16px */
+  --text-theme-md--line-height: calc(1.5 / 1);
+  --text-theme-lg: var(--text-lg); /* 18px */
+  --text-theme-lg--line-height: calc(1.75 / 1.125);
+  --text-theme-xl: var(--text-xl); /* 20px */
+  --text-theme-xl--line-height: calc(1.75 / 1.25);
+  --text-theme-2xl: var(--text-2xl); /* 24px */
+  --text-theme-2xl--line-height: calc(2 / 1.5);
+  --text-theme-4xl: var(--text-4xl); /* 36px */
+  --text-theme-4xl--line-height: calc(2.5 / 2.25);
+}
+
+@layer components {
+  a,
+  .prose a {
+    @apply text-theme-accent no-underline transition-all duration-200;
+  }
+
+  ::selection {
+    @apply bg-theme-text;
+    @apply text-theme-highlight-low;
+  }
+
+  @keyframes pulse-border {
+    0% {
+      transform: scale(1);
+      box-shadow: 0 0 0 0 rgba(152, 147, 165, 0);
+    }
+
+    40% {
+      transform: scale(1);
+      box-shadow: 0 0 0 0 rgba(152, 147, 165, 0.7);
+    }
+
+    80% {
+      transform: scale(1);
+      box-shadow: 0 0 0 7px rgba(152, 147, 165, 0);
+    }
+
+    100% {
+      transform: scale(1);
+      box-shadow: 0 0 0 0 rgba(152, 147, 165, 0);
+    }
+  }
+
+  .theme-pulse-border {
+    box-shadow: 0 0 0 0 rgba(152, 147, 165, 1);
+    animation: pulse-border 5s infinite;
+  }
 }
