@@ -4,7 +4,8 @@ import { compileMarkdown } from '@content-collections/markdown'
 const profile = defineCollection({
   name: 'profile',
   directory: 'src/data/profile',
-  include: '**/*.md',
+  include: '**/*.yaml',
+  parser: 'yaml',
   schema: (z) => ({
     name: z.string(),
     role: z.string(),
@@ -35,6 +36,23 @@ const intro = defineCollection({
   },
 })
 
+const skills = defineCollection({
+  name: 'skills',
+  directory: 'src/data/skills',
+  include: '**/*.yaml',
+  parser: 'yaml',
+  schema: (z) => ({
+    title: z.string(),
+    slug: z.string(),
+    skills: z.array(
+      z.object({
+        group: z.string(),
+        items: z.array(z.object({ name: z.string() })),
+      }),
+    ),
+  }),
+})
+
 export default defineConfig({
-  collections: [profile, intro],
+  collections: [profile, intro, skills],
 })

@@ -1,0 +1,22 @@
+title: Skills
+slug: skills
+skills:
+  - group: What I do
+    items:
+      - name: Frontend Development
+      - name: Full Stack Development
+      - name: Technical leadership
+
+  - group: Languages & Frameworks
+    items:
+      - name: JavaScript
+      - name: TypeScript
+      - name: React
+      - name: Next.js
+      - name: Node
+      - name: Fastify
+      - name: Express
+      - name: HTML
+      - name: CSS
+      - name: Tailwind CSS
+      - name: Vite

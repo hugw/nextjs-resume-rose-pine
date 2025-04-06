@@ -51,7 +51,7 @@
   --text-theme-4xl--line-height: calc(2.5 / 2.25);
 }
 
-@layer components {
+@layer base {
   a,
   .prose a {
     @apply text-theme-accent no-underline transition-all duration-200;

@@ -30,9 +30,8 @@ export const MenuItem = ({
         duration={300}
         hashSpy={true}
         className={cn(
-          'py-theme-2x text-theme-subtle group-hover:text-theme-primary block flex-1 font-medium',
+          'py-theme-2x group-hover:text-theme-primary text-theme-sm text-theme-subtle block flex-1 font-medium',
           isActive && 'text-theme-primary font-bold',
-          'text-theme-sm',
         )}
         onSetActive={() => setIsActive(true)}
         onSetInactive={() => setIsActive(false)}
