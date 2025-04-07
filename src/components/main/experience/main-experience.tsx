@@ -14,7 +14,7 @@ export const MainExperience = ({ experience }: MainExperienceProps) => {
             <h4 className="text-theme-primary text-xl font-black tracking-tight">
               {experience.company}
             </h4>
-            <div className="text-theme-muted hidden flex-1 text-right font-semibold sm:block">
+            <div className="text-theme-subtle hidden flex-1 text-right text-sm font-semibold sm:block">
               {experience.date}
             </div>
           </div>
@@ -25,7 +25,7 @@ export const MainExperience = ({ experience }: MainExperienceProps) => {
                 <h3 className="text-theme-text text-lg font-bold tracking-tight">
                   {role.title}
                 </h3>
-                <p className="text-theme-muted text-sm font-semibold">
+                <p className="text-theme-subtle text-sm font-semibold">
                   {role.date}
                 </p>
                 <div className="prose-sm text-theme-subtle md:w-3/4">

@@ -14,6 +14,13 @@ const basics = defineCollection({
     })
 
     return {
+      meta: z.object({
+        title: z.string(),
+        description: z.string(),
+        image: z.string(),
+        keywords: z.array(z.string()),
+        url: z.string().url(),
+      }),
       profile: z.object({
         name: z.string(),
         role: z.string(),

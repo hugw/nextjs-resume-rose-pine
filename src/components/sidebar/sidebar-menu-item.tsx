@@ -23,6 +23,7 @@ export const MenuItem = ({
         strokeWidth="1.5"
       />
       <Link
+        href={`#${to}`}
         to={to}
         spy={true}
         smooth={'linear'}

@@ -1,3 +1,14 @@
+meta:
+  url: https://theurl.com
+  title: Elric Tano | Senior Software Engineer
+  description: Expert in React & Astro. Passionate about building fast, modern, and elegant web interfaces.
+  image: /avatar.jpg
+  keywords:
+    - Senior Software Engineer
+    - React
+    - Astro
+    - Web Development
+
 profile:
   name: Elric Tano
   role: Senior Software Engineer

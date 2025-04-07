@@ -1,3 +1,14 @@
+meta:
+  url: https://theurl.com
+  title: Elric Tano | Engenheiro de Software Sênior
+  description: Especialista em React & Astro. Apaixonado por construir interfaces rápidas, modernas e elegantes.
+  image: /avatar.jpg
+  keywords:
+    - Engenheiro de Software Sênior
+    - React
+    - Astro
+    - Web Development
+
 profile:
   name: Elric Tano
   role: Engenheiro de Software Sênior
