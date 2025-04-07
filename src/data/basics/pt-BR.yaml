@@ -36,16 +36,16 @@ sections:
     name: Intro
     slug: intro
   skills:
-    name: Skills
-    slug: skills
+    name: Habilidades
+    slug: habilidades
   experience:
-    name: Experience
-    slug: experience
+    name: Experiência
+    slug: experiencia
   faq:
-    name: About me
-    slug: about-me
+    name: Sobre mim
+    slug: sobre-mim
 
 labels:
-  hello: <b>Opa!</b> Sou
+  hello: <b>Opa!</b> Sou o
   builtWith: Construído com
   and: e

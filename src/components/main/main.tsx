@@ -4,7 +4,7 @@ import { MainBlock } from './main-block'
 import { MainTitle } from './main-title'
 import { MainSkills } from './skills/main-skills'
 import { MainFaq } from './faq/main-faq'
-import { MainExperience } from './experience.tsx/main-experience'
+import { MainExperience } from './experience/main-experience'
 
 type MainProps = {
   lang: string
