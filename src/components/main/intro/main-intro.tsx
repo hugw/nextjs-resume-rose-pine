@@ -1,3 +1,4 @@
+import { Typography } from '@/components/shared/typography'
 import { Intro } from 'content-collections'
 
 type MainIntroProps = {
@@ -6,9 +7,9 @@ type MainIntroProps = {
 
 export const MainIntro = ({ intro }: MainIntroProps) => {
   return (
-    <div
+    <Typography
+      content={intro.html}
       className="prose-sm text-theme-text md:prose md:text-theme-text"
-      dangerouslySetInnerHTML={{ __html: intro.html }}
     />
   )
 }

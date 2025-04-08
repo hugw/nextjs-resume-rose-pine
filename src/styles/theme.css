@@ -52,9 +52,8 @@
 }
 
 @layer base {
-  a,
-  .prose a {
-    @apply text-theme-accent no-underline transition-all duration-200;
+  a {
+    @apply text-theme-accent hover:text-theme-text no-underline transition-all duration-200;
   }
 
   ::selection {

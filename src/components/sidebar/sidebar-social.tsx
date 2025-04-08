@@ -37,7 +37,7 @@ const SocialButton = ({
     <ExternalLink
       href={href}
       title={title}
-      className="border-theme-border bg-theme-overlay text-theme-text hover:border-theme-accent p-theme-2x block rounded border transition-all duration-200"
+      className="border-theme-border bg-theme-overlay text-theme-text hover:border-theme-accent p-theme-2x hover:text-theme-accent block rounded border transition-all duration-200"
     >
       <FontAwesomeIcon icon={icon} className="h-5 w-5" />
     </ExternalLink>

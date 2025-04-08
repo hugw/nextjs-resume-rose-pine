@@ -19,7 +19,7 @@ export const ExternalLink = forwardRef<
       ref={ref}
       href={href}
       title={title}
-      className={cn('hover:text-theme-accent font-semibold', className)}
+      className={cn('font-semibold', className)}
       target="_blank"
       rel="nofollow noopener noreferrer"
       {...rest}

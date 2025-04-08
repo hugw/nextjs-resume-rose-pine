@@ -6,6 +6,7 @@ import {
   CollapsibleTrigger,
 } from '@/components/shared/collapsible'
 import { Faq } from 'content-collections'
+import { Typography } from '@/components/shared/typography'
 
 type MainFaqProps = {
   questions: Faq[]
@@ -34,9 +35,9 @@ export const MainFaq = ({ questions }: MainFaqProps) => {
               </div>
             </CollapsibleTrigger>
             <CollapsibleContent>
-              <div
+              <Typography
+                content={item.html}
                 className="prose-sm text-theme-subtle mt-theme-5x pr-theme-10x"
-                dangerouslySetInnerHTML={{ __html: item.html }}
               />
             </CollapsibleContent>
           </Collapsible>

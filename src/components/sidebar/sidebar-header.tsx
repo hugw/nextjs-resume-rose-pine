@@ -20,7 +20,7 @@ export const SidebarHeader = ({ profile, labels }: SidebarHeaderProps) => {
         </div>
       </div>
       <p
-        className="from-theme-secondary to-theme-secondary/90 text-theme-highlight-low mb-theme-1x p-theme-2x text-theme-sm rounded-full rounded-bl-none bg-gradient-to-r py-1"
+        className="from-theme-secondary to-theme-secondary/90 text-theme-highlight-low mb-theme-1x p-theme-2x text-theme-sm cursor-default rounded-full rounded-bl-none bg-gradient-to-r py-1"
         dangerouslySetInnerHTML={{ __html: labels.hello }}
       />
 
