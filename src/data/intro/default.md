@@ -1,3 +1,5 @@
+**This is a demo profile**
+
 Hello! I’m a dedicated Software Engineer with a deep focus on Frontend development and a strong interest in building fast, accessible, and modern web interfaces.
 
 With over a decade of hands-on experience, I’ve contributed to a range of products across companies like CodeReach Labs, SyntaxField, and currently, NebulaStack. My work centers around React, Astro, and TypeScript, with an emphasis on performance, maintainability, and developer experience.
