@@ -1,18 +1,18 @@
 meta:
   url: https://theurl.com
   title: Elric Tano | Engenheiro de Software Sênior
-  description: Especialista em React & Astro. Apaixonado por construir interfaces rápidas, modernas e elegantes.
+  description: Especialista em React e Astro. Apaixonado pelo desenvolvimento de interfaces web rápidas, modernas e elegantes.
   image: /avatar.jpg
   keywords:
     - Engenheiro de Software Sênior
     - React
     - Astro
-    - Web Development
+    - Desenvolvimento Web
 
 profile:
   name: Elric Tano
   role: Engenheiro de Software Sênior
-  headline: Especialista em React & Astro. Apaixonado por construir interfaces rápidas, modernas e elegantes.
+  headline: Especialista em React e Astro. Apaixonado pelo desenvolvimento de interfaces web rápidas, modernas e elegantes.
   socials:
     - id: github
       url: https://github.com/elrictano30
@@ -22,7 +22,7 @@ profile:
       url: https://twitter.com/elrictano30
 
 skills:
-  - group: O que faço
+  - group: O que eu faço
     items:
       - name: Desenvolvimento Frontend
       - name: Desenvolvimento Full Stack
@@ -44,7 +44,7 @@ skills:
 
 sections:
   intro:
-    name: Intro
+    name: Introdução
     slug: intro
   skills:
     name: Habilidades
@@ -57,6 +57,6 @@ sections:
     slug: sobre-mim
 
 labels:
-  hello: <b>Opa!</b> Sou o
-  builtWith: Construído com
+  hello: <b>Olá!</b> Eu sou
+  builtWith: Desenvolvido com
   and: e

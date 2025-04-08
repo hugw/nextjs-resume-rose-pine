@@ -1,6 +1,6 @@
 ---
-question: Qual é minha definição de "completo"?
+question: Qual é a minha definição de "pronto"?
 order: 3
 ---
 
-Para mim, "completo" significa mais do que "está funcionando". Uma funcionalidade está pronta quando a interface é intuitiva, o código está limpo e manutenível, os casos excepcionais são tratados e a performance está otimizada. Se eu não me sentiria confiante em passar para outra pessoa ou publicar em produção, ainda não está pronto.
+Para mim, "pronto" vai além de simplesmente "funcionar". Uma funcionalidade está realmente concluída quando a interface é intuitiva, o código é limpo e fácil de manter, os casos excepcionais são devidamente tratados e o desempenho está otimizado. Se eu não me sinto seguro em entregar algo ou publicar em produção, então ainda não está pronto.

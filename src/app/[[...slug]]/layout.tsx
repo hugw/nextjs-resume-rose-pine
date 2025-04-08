@@ -3,6 +3,7 @@ import { getLangFromUrl } from '@/utils/i18n'
 import { PageLayout } from '@/components/layouts/page-layout'
 import { Metadata } from 'next'
 import { getBasics } from '@/data/data'
+import { getJSONLD, getMetaTags } from '@/utils/seo'
 
 export const dynamicParams = false
 
@@ -17,33 +18,11 @@ export async function generateMetadata({
   params: Promise<{ slug?: string[] }>
 }): Promise<Metadata> {
   const { slug } = await params
-  const lang = getLangFromUrl(slug)
-  const basics = await getBasics(lang)
 
-  return {
-    metadataBase: new URL(basics.meta.url),
-    title: basics.meta.title,
-    description: basics.meta.description,
-    keywords: basics.meta.keywords.join(', '),
-    verification: {},
-    openGraph: {
-      title: basics.meta.title,
-      description: basics.meta.description,
-      images: basics.meta.image,
-    },
-    alternates: {
-      canonical: '/',
-      languages: LANGUAGES.filter((lang) => lang !== DEFAULT_LANGUAGE).reduce(
-        (acc, lang) => ({
-          ...acc,
-          [lang]: `/${lang}`,
-        }),
-        {},
-      ),
-    },
-    robots: 'index, follow',
-    icons: '/favicon.ico',
-  }
+  const lang = getLangFromUrl(slug)
+  const basics = getBasics(lang)
+
+  return getMetaTags(basics)
 }
 
 type LayoutProps = {
@@ -53,17 +32,11 @@ type LayoutProps = {
 
 export default async function Layout({ children, params }: LayoutProps) {
   const { slug } = await params
-  const lang = getLangFromUrl(slug)
-  const basics = await getBasics(lang)
 
-  const JSON_LD = {
-    '@context': 'https://schema.org',
-    '@type': 'Person',
-    name: basics.profile.name,
-    jobTitle: basics.profile.role,
-    url: basics.meta.url,
-    sameAs: basics.profile.socials.map((social) => social.url),
-  }
+  const lang = getLangFromUrl(slug)
+  const basics = getBasics(lang)
+
+  const JSON_LD = getJSONLD(basics)
 
   return (
     <PageLayout lang={lang}>

@@ -5,9 +5,9 @@ experience:
       - title: Engenheiro Frontend Sênior
         date: 2020 — Presente
         description:
-          - Liderou a migração do produto principal da empresa de um sistema legado para React e Astro, melhorando o tempo de carregamento em 40%.
+          - Liderou a migração do produto principal da empresa de um sistema legado para React e Astro, reduzindo o tempo de carregamento em 40%.
           - Projetou e implementou um sistema de componentes compartilhados utilizado por quatro equipes de produto.
-          - Colaborou com as equipes de backend e design para entregar funcionalidades voltadas ao cliente com foco em acessibilidade e performance.
+          - Colaborou com as equipes de backend e design para entregar funcionalidades voltadas ao cliente com foco em acessibilidade e desempenho.
 
   - company: BrightLayer Technologies
     date: 2015 — 2020
@@ -16,13 +16,13 @@ experience:
         date: 2018 — 2020
         description:
           - Liderou uma iniciativa de redesign da plataforma, melhorando a navegação e aumentando o engajamento dos usuários em 25%.
-          - Introduziu técnicas de code-splitting e lazy loading para melhorar o tempo de renderização inicial em páginas principais.
-          - Mentorou desenvolvedores júnior em práticas modernas de frontend e ajudou a impulsionar a adoção do TypeScript.
+          - Implementou técnicas de code-splitting e lazy loading para melhorar o tempo de renderização inicial em páginas principais.
+          - Orientou desenvolvedores júnior em práticas modernas de frontend e ajudou a impulsionar a adoção do TypeScript.
 
       - title: Engenheiro Frontend
         date: 2015 — 2018
         description:
-          - Desenvolveu funcionalidades principais da interface para um dashboard multi-tenant complexo usado por clientes enterprise.
+          - Desenvolveu funcionalidades centrais da interface para um painel administrativo multi-tenant complexo utilizado por clientes corporativos.
           - Participou da migração de Backbone para React, ajudando a refatorar componentes legados ao longo do processo.
           - Construiu ferramentas internas para otimizar os processos de QA e ambientes de demonstração para stakeholders do produto.
 
@@ -32,6 +32,6 @@ experience:
       - title: Desenvolvedor Frontend
         date: 2012 — 2015
         description:
-          - Desenvolveu websites responsivos e aplicações web para startups usando HTML, CSS e JavaScript.
-          - Colaborou diretamente com designers e redatores para entregar experiências polidas e alinhadas com a marca.
-          - Adquiriu experiência com os primeiros frameworks JS e construiu a biblioteca de padrões interna da empresa.
+          - Desenvolveu websites responsivos e aplicações web para startups utilizando HTML, CSS e JavaScript.
+          - Colaborou diretamente com designers e redatores para entregar experiências refinadas e alinhadas com a identidade das marcas.
+          - Adquiriu experiência com os primeiros frameworks JavaScript e desenvolveu a biblioteca de padrões interna da empresa.
