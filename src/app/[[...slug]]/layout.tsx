@@ -1,5 +1,6 @@
 import { DEFAULT_LANGUAGE, LANGUAGES } from '@/config'
 import { getLangFromUrl } from '@/utils/i18n'
+import { Analytics } from "@vercel/analytics/react"
 import { PageLayout } from '@/components/layouts/page-layout'
 import { Metadata } from 'next'
 import { getBasics } from '@/data/data'
@@ -42,6 +43,7 @@ export default async function Layout({ children, params }: LayoutProps) {
     <PageLayout lang={lang}>
       <script type="application/ld+json">{JSON.stringify(JSON_LD)}</script>
       {children}
+      <Analytics />
     </PageLayout>
   )
 }
