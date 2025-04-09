@@ -1,6 +1,12 @@
-# Rosé Pine Resume
+<h1 align="center">NextJS Resume Rosé Pine</h1>
 
-A clean, minimal resume/portfolio site built with Next.js and the elegant [Rosé Pine](https://rosepinetheme.com/) color palette.
+<p align="center">
+A clean, minimal resume / portfolio site built with Next.js and the elegant <b>Rosé Pine</b> color palette.
+</p>
+
+<p align="center">
+ <a href="https://nextjs-resume.hugw.cloud">Live Demo</a>
+</p>
 
 <p align="center">
   <img src="public/assets/palette.png" width="125" />
@@ -10,7 +16,7 @@ A clean, minimal resume/portfolio site built with Next.js and the elegant [Rosé
 
 ## Features
 
-- Beautiful Rosé Pine theme
+- Beautiful [Rosé Pine](https://rosepinetheme.com/) theme
 - Multi-language support
 - Responsive design
 - Next.js 15

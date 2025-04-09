@@ -1,5 +1,5 @@
 meta:
-  url: https://theurl.com
+  url: https://nextjs-resume.hugw.cloud
   title: Elric Tano | Senior Software Engineer
   description: Expert in React & Astro. Passionate about building fast, modern, and elegant web interfaces.
   image: /avatar.jpg
@@ -15,7 +15,7 @@ profile:
   headline: Expert in React & Astro. Passionate about building fast, modern, and elegant web interfaces.
   socials:
     - id: github
-      url: https://github.com/elrictano30
+      url: https://github.com/hugw/nextjs-resume-rose-pine
     - id: linkedin
       url: https://linkedin.com/in/elrictano30
     - id: twitter
